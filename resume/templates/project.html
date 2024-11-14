@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Project Page
+{% endblock %}
+
+{% block content1 %}
+
+<div class="container my-5">
+    <div class="row gy-4">
+        {% for project in projects_show %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+            <div class="card shadow-sm" style="width: 100%; max-width: 18rem;">
+                <img src="{% static project.path %}" class="card-img-top img-fluid" alt="{{project.title}}">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{project.title}}</h5>
+                    <p class="card-text text-muted">A brief description of the project. Check out the demo or the code below!</p>
+                    <a href="{{project.demoLink}}" target="_blank" class="btn btn-outline-primary me-2">Demo</a>
+                    <a href="{{project.code}}" target="_blank" class="btn btn-outline-secondary">Code</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

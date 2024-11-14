@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(20,0,30);
+}
+.navbar-nav .nav-link:hover
+{
+  font-weight: bold;
+  color: rgb(100, 97, 238);
+}
+.navbar-nav .nav-link
+{
+    font-size: 18px;
+}
+
+.navbar-brand
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+.navbar-dark
+{
+    background-color: rgb(20,0,30);
+}
+.nav-item
+{
+    padding: 0px 6px;
+}
+
+.navbar-nav .nav-item a{
+    font-weight: bold;
+    color: white;
+}
+
+/* home page  */
+
+.circular-image-container{
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image{
+width:120%;
+height: auto;
+display: block;
+}
+
+.name{
+    color: #4fffb0;
+}
+
+.title{
+    color: #4fffb0;
+}
+
+.social_links{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* about page  */
+
+.about_image{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* experiences  */
+
+.jumbtron{
+    background-color: #002244;
+    padding:20px;
+    margin: 15px;
+    margin-left: 200px;
+    width: 50%;
+    border-radius:10px;
+}
+
+
+.display4 {
+color: #eef3f8;
+font-size: 24px;
+}
+
+.lead{
+    font-size: 18px;
+    color:#28a745;
+}
+
+/* contact  page   */
+
+.form-container{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+
+/* extra  */
+
+
+/* Card Image Styling */
+.card-img-top {
+    height: 200px;               /* Set a fixed height for the image */
+    object-fit: cover;           /* Ensure the image covers the area without distortion */
+    width: 100%;                 /* Make the image span the full width of the card */
+}
+
+/* Adjust Card Height */
+.card {
+    height: 100%;
+}
+
+/* Ensure Cards are Responsive */
+.card-body {
+    padding: 1rem;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+}
+
+/* Adjust text size for smaller screens */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
+/* certficate  */
+

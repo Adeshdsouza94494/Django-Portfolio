@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+About Page
+{% endblock %}
+
+{% block content1 %}
+
+<div class="container my-5">
+    <!-- About Section -->
+    <div class="row gy-4 align-items-center">
+        <div class="col-12 col-md-4 d-flex justify-content-center">
+            <img src="{% static 'images/mypic.jpg' %}" alt="Adesh's Picture" class="about_image rounded-circle img-fluid" style="max-width: 250px;">
+        </div>
+        
+        <div class="col-12 col-md-8 text-light">
+            <h2>Hello!</h2>
+            <p class="fs-5">
+                I'm Adesh, an Electronics and Communication Engineering graduate with a strong interest in IT and software development. My journey in tech includes hands-on experience with the MERN stack, Django, and various front-end projects. 
+                I love creating user-friendly applications and am always eager to expand my skills.
+            </p>
+            <p class="fs-5">
+                I'm currently seeking opportunities to grow as a developer and contribute my skills to impactful projects.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Tech Stack Section -->
+    <div class="row my-5">
+        <h2 class="text-center" style="color: #4fffb0;">My Tech Stack</h2>
+        
+        <div class="col-12 d-flex flex-wrap justify-content-center gap-4 mt-3">
+            <img src="{% static 'images/html.png' %}" width="60" height="60" alt="HTML Logo" class="img-fluid" />
+            <img src="{% static 'images/css.png' %}" width="60" height="60" alt="CSS Logo" class="img-fluid" />
+            <img src="{% static 'images/javascript.png' %}" width="60" height="60" alt="JavaScript Logo" class="img-fluid" />
+            <img src="{% static 'images/python.png' %}" width="60" height="60" alt="Python Logo" class="img-fluid" />
+            <img src="{% static 'images/react.png' %}" width="60" height="60" alt="React Logo" class="img-fluid" />
+            <img src="{% static 'images/django-icon.svg' %}" width="60" height="60" alt="Django Logo" class="img-fluid" />
+            <img src="{% static 'images/mysql.webp' %}" width="60" height="60" alt="MySQL Logo" class="img-fluid" />
+        </div>
+    </div>
+</div>
+
+{% endblock %}

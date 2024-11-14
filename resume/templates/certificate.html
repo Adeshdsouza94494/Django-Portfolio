@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Certificate Page
+{% endblock %}
+
+{% block content1 %}
+
+<div class="container my-5">
+    <div class="row gy-4">
+        <!-- Certificate: Web Developer -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%; max-width: 20rem;">
+                <img src="{% static 'images/Web Developer.jpg' %}" class="card-img-top img-fluid card-img-custom" alt="Web Developer Certificate">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Web Developer</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate: HTML & CSS -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%; max-width: 20rem;">
+                <img src="{% static 'images/html_cert.png' %}" class="card-img-top img-fluid card-img-custom" alt="HTML & CSS Certificate">
+                <div class="card-body text-center">
+                    <h5 class="card-title">HTML & CSS</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate: JavaScript -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%; max-width: 20rem;">
+                <img src="{% static 'images/js_cert.png' %}" class="card-img-top img-fluid card-img-custom" alt="JavaScript Certificate">
+                <div class="card-body text-center">
+                    <h5 class="card-title">JavaScript</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate: Python -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%; max-width: 20rem;">
+                <img src="{% static 'images/python_cert.png' %}" class="card-img-top img-fluid card-img-custom" alt="Python Certificate">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Python</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate: React JS -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%; max-width: 20rem;">
+                <img src="{% static 'images/react.jpg' %}" class="card-img-top img-fluid card-img-custom" alt="React JS Certificate">
+                <div class="card-body text-center">
+                    <h5 class="card-title">React JS</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate: MySQL -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card" style="width: 100%; max-width: 20rem;">
+                <img src="{% static 'images/mysql1.png' %}" class="card-img-top img-fluid card-img-custom" alt="MySQL Certificate">
+                <div class="card-body text-center">
+                    <h5 class="card-title">MySQL</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

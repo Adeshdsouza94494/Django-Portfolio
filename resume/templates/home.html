@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content1 %}
+
+<div class="row my-5 text-center">
+    <!-- Profile Image with Animation -->
+    <div class="col-12 d-flex justify-content-center align-items-center mb-4 animate__animated animate__zoomIn">
+        <div class="circular-image-container">
+            <img class="circular-image" src="{% static 'images/hero.avif' %}" alt="Profile Picture">
+        </div>
+    </div>
+
+    <!-- Introductory Text with Fade-in Animation -->
+    <div class="col-12 animate__animated animate__fadeInDown">
+        <h4 class="title"> Hi, my name is </h4>
+        <div class="name animate-name">
+            <h4> Adesh Dsouza </h4>
+            <h4> Software Developer </h4>
+        </div>
+    </div>
+
+    <!-- Social Links with Bounce-in Animation -->
+    <div class="col-12 mt-4 d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/adesh-dsouza-14b29a190/" target="_blank" class="ms-3 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <img src="{% static 'images/linkedin.webp' %}" alt="LinkedIn" width="50" height="50" class="social_links">
+        </a>
+        <a href="https://github.com/Adeshdsouza94494" target="_blank" class="ms-3 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <img src="{% static 'images/github.png' %}" alt="GitHub" width="50" height="50" class="social_links">
+        </a>
+        <a href="https://www.instagram.com/adesh.dsouza/" target="_blank" class="ms-3 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+            <img src="{% static 'images/instagram.avif' %}" alt="Instagram" width="50" height="50" class="social_links">
+        </a>
+    </div>
+</div>
+
+{% endblock %}
